@@ -1,0 +1,23 @@
+*{
+    list-style: none;
+    
+}
+
+input {
+    padding: 0;
+    margin-top: 25px;
+    border-radius: 10px;
+    height: 40px;
+
+}
+
+label {
+    font-size: large;
+}
+
+#selection {
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
