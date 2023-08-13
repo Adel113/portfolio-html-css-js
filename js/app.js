@@ -1,52 +1,14 @@
-document.addEventListener("DOMContentLoaded", function(event) {
 
-    const showNavbar = (toggleId, navId, bodyId, headerId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId),
-    bodypd = document.getElementById(bodyId),
-    headerpd = document.getElementById(headerId)
-    
-    if(toggle && nav && bodypd && headerpd){
-    toggle.addEventListener('click', ()=>{
-    nav.classList.toggle('show')
-    toggle.classList.toggle('bx-x')
-    bodypd.classList.toggle('body-pd')
-    headerpd.classList.toggle('body-pd')
-    })
-    }
-    }
-    
-    showNavbar('header-toggle','nav-bar','body-pd','header')
-    
-    const linkColor = document.querySelectorAll('.nav_link')
-    
-    function colorLink(){
-    if(linkColor){
-    linkColor.forEach(l=> l.classList.remove('active'))
-    this.classList.add('active')
-    }
-    }
-    linkColor.forEach(l=> l.addEventListener('click', colorLink))
-    
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  var animationElement = document.querySelector(".scroll-animation");
 
+  var waypoint = new Waypoint({
+    element: animationElement,
+    handler: function () {
+      animationElement.classList.add("bounce-top");
+      this.destroy(); // Arrête le suivi une fois l'animation ajoutée
+    },
+    offset: "50%" // L'animation se déclenchera lorsque l'élément est à 50% de la fenêtre
+  });
+});
 
-
-
-///////dark light mode 
-document.getElementById('blackButton').onclick = switchblack;
-document.getElementById('whiteButton').onclick = switchWhite;
-
-
-function switchblack() {
-  document.body.style.backgroundColor = 'black';
-  document.body.style.color = 'white';
-
-
-}
-
-function switchWhite() {
-  document.body.style.backgroundColor = 'white';
-  document.body.style.color = 'black';
-
-}
