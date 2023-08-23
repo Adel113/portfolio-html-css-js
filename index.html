@@ -17,10 +17,12 @@
 </head>
 <body>
   <div class='dashboard'>
+    
     <div class="dashboard-nav">
         <header>
+          
           <a href="#!" class="menu-toggle">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"> </i> 
           </a>
           <a href="#" class="brand-logo">
             <img class="menuasa" src="pictures/ADELCV.PNG" alt="">
@@ -30,17 +32,17 @@
         <nav class="dashboard-nav-list">
             <a href="#" class="dashboard-nav-item">
               <i class="fas fa-home">
-  
               </i>
-              Home 
-            </a>
-            <a href="#" class="dashboard-nav-item active">
-              <i class="fas fa-tachometer-alt">
-  
-              </i> dashboard
+              Qui suis-je ! 
+            </a> 
+            <a href="#" class="dashboard-nav-item" id="CoordonnéesLink">
+              <i class="fas fa-file-upload"></i> Coordonnées 
             </a>
             <a href="#" class="dashboard-nav-item" id="CompétencesLink">
               <i class="fas fa-file-upload"></i> Compétences 
+            </a>
+            <a href="#" class="dashboard-nav-item" id="FormationsLink">
+              <i class="fas fa-file-upload"></i> Formations
             </a>
             <a href="#" class="dashboard-nav-item" id="FormationsLink">
               <i class="fas fa-file-upload"></i> form
@@ -61,6 +63,7 @@
     <header class='dashboard-toolbar'><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a></header>
     <div class='dashboard-content'>
         <div class='container'>
+          <h1 class="titre-1 bounce-top">Bienvenus à mon portfolio</h1>
           <div class="row">
             <div class="col-md-4">
               
@@ -82,51 +85,52 @@
         
           
           <hr class="featurette-divider">
-         
-          <div class="row coordonnees" style="background-color: rgb(62, 62, 85); border-radius: 10px; " >
-            <div class="col-md-4">
-              <img alt="Bootstrap Image Preview" src="pictures/adresse.png" />
-              <h2 style="text-align: center;">
-                <a href="https://www.google.com/maps/place/59155+Faches-Thumesnil/@50.5955681,3.0713515,14z/data=!3m1!4b1!4m6!3m5!1s0x47c2d4356fdfaf7b:0x1c0af141f1250070!8m2!3d50.5948385!4d3.0735552!16s%2Fg%2F1tcwq8xs?entry=ttu">Lille,59155</a>
-              </h2>
-            </div>
-            <div class="col-md-4">
-              <img alt="Bootstrap Image Preview" src="pictures/gmail.png.png" />
-              <h2 style="text-align: center;">
-                <a href="mailto:adelsidiahmed2020@gmail.com">adelsidiahmed2020@gmail.com</a>
-              </h2>
-      
-            </div>
-            <div class="col-md-4">
-              <img alt="Bootstrap Image Preview" src="pictures/num.png" />
-              <h2 style="text-align: center;">
-                <a href="tel:+33761535757">0761535757</a>
-              </h2>
-            </div>
-          
-            <div class="col-md-4">
-              <img alt="Bootstrap Image Preview" src="pictures/github-logo.png" />
-              <h2 style="text-align: center;">
-                <a href="#">Adel113</a>
-              </h2>
-            </div>
-            <div class="col-md-4">
-              <img alt="Bootstrap Image Preview" src="pictures/linkedin.png" />
-              <h2 style="text-align: center;">
-                <a href="#">Adel SIDI AHMED </a>
-              </h2>
-      
-            </div>
-            <div class="col-md-4">
-              <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
-              <h2 style="text-align: center;">
-                Heading
-              </h2>
-            </div>
+
+          <section id="CoordonnéesSection">
+            <div class="row coordonnees" style=" " >
+              <div class="col-md-4">
+                <img alt="Bootstrap Image Preview" src="pictures/source-locale.png" />
+                <h2 style="text-align: center;">
+                  <a href="https://www.google.com/maps/place/59155+Faches-Thumesnil/@50.5955681,3.0713515,14z/data=!3m1!4b1!4m6!3m5!1s0x47c2d4356fdfaf7b:0x1c0af141f1250070!8m2!3d50.5948385!4d3.0735552!16s%2Fg%2F1tcwq8xs?entry=ttu">Lille,59155</a>
+                </h2>
+              </div>
+              <div class="col-md-4">
+                <img alt="Bootstrap Image Preview" src="pictures/gmail.png" />
+                <h2 style="text-align: center;">
+                  <a href="mailto:adelsidiahmed2020@gmail.com">adelsidiahmed2020@gmail.com</a>
+                </h2>
+        
+              </div>
+              <div class="col-md-4">
+                <img alt="Bootstrap Image Preview" src="pictures/telephone.png" />
+                <h2 style="text-align: center;">
+                  <a href="tel:+33761535757">0761535757</a>
+                </h2>
+              </div>
             
-              
-              
+              <div class="col-md-4">
+                <img alt="Bootstrap Image Preview" src="pictures/github-logo.png" />
+                <h2 style="text-align: center;">
+                  <a href="#">Adel113</a>
+                </h2>
+              </div>
+              <div class="col-md-4">
+                <img alt="Bootstrap Image Preview" src="pictures/linkedin.png" />
+                <h2 style="text-align: center;">
+                  <a href="#">Adel SIDI AHMED </a>
+                </h2>
+        
+              </div>
+              <div class="col-md-4">
+                <img alt="Bootstrap Image Preview" src="pictures/joyeux-anniversaire.png" />
+                <h2 style="text-align: center;">
+                  20ans
+                </h2>
+              </div>   
             </div>
+          </section>
+         
+          
           
         
       
@@ -140,16 +144,21 @@
                 <p style="text-align: center;">
                   Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
                 </p>
-                
-                <div class="row">
-                  <div class="col-md-12  ">
-                    <div class="bounce-top scroll-animation">
-                      <img style="display: block; width: 100%;alt="Bootstrap Image Preview" src="pictures/centre.png"  />
-                      <!-- Votre contenu ici -->
+
+                <div class="animation-trigger">
+                  
+                  <div class="row">
+                    <div class="col-md-12  ">
+                      <div class="bounce-top scroll-animation">
+                        <img style="display: block; width: 100%;alt="Bootstrap Image Preview" src="pictures/centre.png"  />
+                      </div>
                     </div>
-                    
                   </div>
                 </div>
+                
+
+
+                
               </div>
             </div>
       
@@ -170,65 +179,118 @@
               
               <div class="row images-competences " style="margin-bottom: 100px;">
                 <div class="col-md-4">
-                  <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/html.png" />
                   <h2 style="text-align: center;">
-                    Heading
+                    HTML
                   </h2>
                 </div>
                 <div class="col-md-4">
-                  <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/css.png" />
                   <h2 style="text-align: center;">
-                    Heading
-                  </h2>
-        
-                </div>
-                <div class="col-md-4">
-                  <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
-                  <h2 style="text-align: center;">
-                    Heading
-                  </h2>
-                </div>
-              
-                <div class="col-md-4">
-                  <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
-                  <h2 style="text-align: center;">
-                    Heading
-                  </h2>
-                </div>
-                <div class="col-md-4">
-                  <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
-                  <h2 style="text-align: center;">
-                    Heading
+                    CSS
                   </h2>
         
                 </div>
                 <div class="col-md-4">
-                  <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/js.png" />
                   <h2 style="text-align: center;">
-                    Heading
+                    JavaScript
                   </h2>
                 </div>
               
                 <div class="col-md-4">
-                  <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/react.png" />
                   <h2 style="text-align: center;">
-                    Heading
+                    ReactJs
+                  </h2>
+                </div>
+                <div class="col-md-4">
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/java.png" />
+                  <h2 style="text-align: center;">
+                    Java
+                  </h2>
+        
+                </div>
+                <div class="col-md-4">
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/serveur-sql.png" />
+                  <h2 style="text-align: center;">
+                    SQL
+                  </h2>
+                </div>
+              
+                <div class="col-md-4">
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/git..png" />
+                  <h2 style="text-align: center;">
+                    git
                   </h2>
                 </div>
                 <div class="col-md-4 ">
-                  <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+                  <img alt="Bootstrap Image Preview" src="pictures/github-logo.png" />
                   <h2 style="text-align: center;">
-                    Heading
+                    GitHub
                   </h2>
-                  
-                  
                 </div>
                 <div class="col-md-4">
-                  <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/ccna.png" />
                   <h2 style="text-align: center;">
-                    Heading
+                    CCNA1
+                  </h2>
+                </div>
+                <div class="col-md-4">
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/wordpress.png" />
+                  <h2 style="text-align: center;">
+                    Wordpress
+                  </h2>
+                </div>
+                <div class="col-md-4">
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/figma.png" />
+                  <h2 style="text-align: center;">
+                    Figma
+                  </h2>
+                </div>
+                <div class="col-md-4">
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/canva.png" />
+                  <h2 style="text-align: center;">
+                    Canva
+                  </h2>
+                </div>
+                <div class="col-md-4">
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/photoshop.png" />
+                  <h2 style="text-align: center;">
+                    Photoshop
                   </h2> 
                 </div>
+                <div class="col-md-4">
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/adobe-illustrator.png" />
+                  <h2 style="text-align: center;">
+                    adobe-illustrator
+                  </h2> 
+                </div>
+                <div class="col-md-4">
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/indesign.png" />
+                  <h2 style="text-align: center;">
+                    Indesign
+                  </h2> 
+                </div>
+                <div class="col-md-4">
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/excel.png" />
+                  <h2 style="text-align: center;">
+                    Excel
+                  </h2> 
+                </div>
+                <div class="col-md-4">
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/power-point.png" />
+                  <h2 style="text-align: center;">
+                    Power-Point
+                  </h2> 
+                </div>
+                <div class="col-md-4">
+                  <img alt="Bootstrap Image Preview" src="pictures/competences/word.png" />
+                  <h2 style="text-align: center;">
+                    Word
+                  </h2> 
+                </div>
+                
               </div>
             </section>
           
