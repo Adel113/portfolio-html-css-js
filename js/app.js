@@ -19,7 +19,7 @@ $(document).ready(function () {
 });
 
 
-
+// systéme de scrolling
 document.addEventListener('DOMContentLoaded', function() {
   const CompetencesLink = document.getElementById('CompétencesLink');
   const competencesSection = document.getElementById('competencesSection');
@@ -31,6 +31,11 @@ document.addEventListener('DOMContentLoaded', function() {
       competencesSection.scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
   const FormationsLink = document.getElementById('FormationsLink');
@@ -55,6 +60,22 @@ document.addEventListener('DOMContentLoaded', function() {
       CoordonnéesSection.scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const ExperiencesLink = document.getElementById('ExperiencesLink');
+  const ExperiencesSections = document.getElementById('ExperiencesSections');
+  
+  ExperiencesLink.addEventListener('click', function(event) {
+      event.preventDefault(); // Empêcher le comportement par défaut du lien
+      
+      // Utiliser smooth scrolling pour faire défiler jusqu'à la section Coordonnées
+      ExperiencesSections.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+
+
 
 
 

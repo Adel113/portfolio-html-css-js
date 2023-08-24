@@ -1,0 +1,98 @@
+/**
+ * ----------------------------------------
+ * FOR PHONE 
+ * ----------------------------------------
+ */
+
+ @media (max-width: 768px) {
+    .content {
+      margin-left: 0; /* Aucune marge à gauche sur les petits écrans */
+    }
+  
+    .navbar {
+      position: fixed;
+      width: 0%; /* Barre de navigation prend la largeur de l'écran */
+      z-index: 1; /* Place la barre de navigation au-dessus du contenu */
+    }
+  
+    .nav-link {
+      padding: 10px 20px;
+    }
+    .imagesCompetences {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 images par ligne */
+      gap: 20px; /* Espacement entre les images */
+    }
+    .imagesCompetences img {
+      max-width: 100%; /* Pour que les images ne dépassent pas leur conteneur */
+    }
+    .coordonnees {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 images par ligne */
+      gap: 1px; /* Espacement entre les images */
+    }
+    .coordonnees img {
+      width: 25px;
+      max-width: 100%;
+      
+    }
+    .coordonnees a {
+      font-size: 15px;
+    }
+    
+    
+  
+    
+  }
+  @media (min-width: 992px) {
+    .dashboard-app {
+        margin-left: 238px;
+    }
+  
+    .dashboard-compact .dashboard-app {
+        margin-left: 0;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .dashboard-content {
+        padding: 15px 0px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .dashboard-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1070;
+    }
+  
+    .dashboard-nav.mobile-show {
+        display: block;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .dashboard-nav header .menu-toggle {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .dashboard-toolbar {
+        left: 238px;
+    }
+  
+    .dashboard-compact .dashboard-toolbar {
+        left: 0;
+    }
+  }
+  
